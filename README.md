@@ -2,16 +2,24 @@
 
 # 老板.skill
 
-> 把“会施压、会打断、会挑刺”的老板，蒸馏成一个可反复调用、可持续进化的 AI Skill。
+<hr>
+
+> “把会施压、会打断、会挑刺的老板，蒸馏成一个 AI Skill。<br>
+> 让它像老板一样追问、像老板一样施压，也像老板一样让你学会怎么回。”
+
+**把老板的压迫风格与决策习惯蒸馏成 AI Skill，让它替老板来拷打你。**
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
 ![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet.svg)
 ![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green.svg)
 
+<br>
+
 先创建一个老板角色，再直接开练。<br>
 支持老板 archetype，也支持根据聊天记录、文档、截图和主观描述做真人复刻。<br>
-角色不是一次性 prompt，而是会随着资料导入和对话纠正持续进化。
+角色不是一次性 prompt，而是会随着资料导入、对话纠正和版本回滚持续进化。<br>
+你可以用它练汇报、练被追责、练对线，也可以把某个真实老板慢慢“养”出来。
 
 [安装](#安装) · [使用](#使用) · [效果示例](#效果示例) · [详细安装](INSTALL.md) · [English](README_EN.md)
 
@@ -28,6 +36,10 @@
 
 生成后可以直接用 `/{slug}` 开练，默认沉浸式模拟；输入 `/debrief` 再切换到复盘模式。
 这个角色还支持持续进化：追加资料、当场纠正、版本回滚。
+
+公共 demo：
+
+- [bosses/boss-li](./bosses/boss-li)
 
 ## 适合什么场景
 
