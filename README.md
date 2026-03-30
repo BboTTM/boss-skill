@@ -4,10 +4,10 @@
 
 <hr>
 
-> “老板老板又老又死板，讲不出东西，听不懂人话。”<br>
-> 让它像老板一样追问、像老板一样施压，也像老板一样让你学会怎么回。
+> “老板老板，又老又死板，讲不出东西，听不懂人话。”
 
-**练习！把老板的讲话风格与决策习惯蒸馏成 AI Skill，让AI模仿老板来拷打你，学会到底怎么和老板沟通。**
+**练习！把老板的讲话风格与决策习惯蒸馏成 AI Skill。<br>
+让AI模仿老板来拷打你，学会到底怎么和老板沟通。**
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)
