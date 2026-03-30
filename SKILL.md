@@ -112,6 +112,14 @@ allowed-tools: Read, Write, Edit, Bash
 - 截图或照片
 - 直接粘贴文本
 
+如果用户给的是飞书 chat_id，优先走官方 OpenAPI：
+
+```bash
+python3 ${CLAUDE_SKILL_DIR}/tools/feishu_chat_import.py \
+  --chat-id "oc_xxx" \
+  --output "./bosses/{slug}/knowledge/messages/feishu-chat.txt"
+```
+
 读取资料后，按 `prompts/real_person_extractor.md` 提取：
 
 - 说话方式
@@ -324,6 +332,14 @@ python3 ${CLAUDE_SKILL_DIR}/tools/skill_writer.py --action list --base-dir ./bos
 
 ```bash
 python3 ${CLAUDE_SKILL_DIR}/tools/skill_writer.py --action import-material --slug "{slug}" --material-file "{path}" --material-kind "{messages|docs|images|notes}" --base-dir ./bosses
+```
+
+导入飞书聊天记录：
+
+```bash
+python3 ${CLAUDE_SKILL_DIR}/tools/feishu_chat_import.py \
+  --chat-id "oc_xxx" \
+  --output "./bosses/{slug}/knowledge/messages/feishu-chat.txt"
 ```
 
 刷新角色卡：

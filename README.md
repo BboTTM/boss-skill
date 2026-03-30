@@ -111,6 +111,8 @@ pip3 install -r requirements.txt
 - 追加资料：聊天记录、截图、文档、邮件、补充说明
 - 当场纠正：例如“他不会这么说”“他更像是先冷一下再问谁负责”
 
+其中聊天记录现在支持飞书官方 OpenAPI 导入。
+
 追加的原始资料会归档到：
 
 ```text
@@ -216,6 +218,33 @@ python3 tools/skill_writer.py \
 python3 tools/skill_writer.py --action refresh-card --slug boss-li --base-dir ./bosses
 ```
 
+## 飞书聊天记录导入
+
+现在支持通过飞书官方 OpenAPI 拉取群聊历史消息，再接入现有老板画像流程。
+
+先准备环境变量：
+
+```bash
+export FEISHU_APP_ID="cli_xxx"
+export FEISHU_APP_SECRET="xxx"
+```
+
+然后导入聊天记录：
+
+```bash
+python3 tools/feishu_chat_import.py \
+  --chat-id "oc_xxx" \
+  --output ./bosses/boss-li/knowledge/messages/feishu-chat.txt
+```
+
+导入后刷新角色卡：
+
+```bash
+python3 tools/skill_writer.py --action refresh-card --slug boss-li --base-dir ./bosses
+```
+
+如果你只想拟合某一个老板本人，也可以在导入时加 `--user-id` 过滤指定发言人。
+
 ## 仓库结构
 
 ```text
@@ -230,9 +259,11 @@ create-boss/
 │   └── boss_card_template.md
 ├── tools/
 │   ├── analyze_boss_materials.py
+│   ├── feishu_chat_import.py
 │   └── skill_writer.py
 ├── tests/
 │   ├── test_analyze_boss_materials.py
+│   ├── test_feishu_chat_import.py
 │   └── test_skill_writer.py
 ├── bosses/
 │   └── {slug}/

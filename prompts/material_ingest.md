@@ -9,6 +9,7 @@
 - 文档
 - 截图或照片
 - 直接粘贴的补充说明
+- 飞书聊天记录（通过官方 OpenAPI 导入）
 
 ## 处理步骤
 
@@ -25,6 +26,14 @@
 
 ```text
 bosses/{slug}/knowledge/{kind}/
+```
+
+如果是飞书聊天记录，优先走官方 API 导入：
+
+```bash
+python3 tools/feishu_chat_import.py \
+  --chat-id "oc_xxx" \
+  --output ./bosses/{slug}/knowledge/messages/feishu-chat.txt
 ```
 
 命名建议：
