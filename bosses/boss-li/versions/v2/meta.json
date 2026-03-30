@@ -1,0 +1,20 @@
+{
+  "display_name": "李总",
+  "source_type": "archetype",
+  "core_persona": "先否定再逼结论的高压结果型老板",
+  "default_mode": "immersive",
+  "default_intensity": "high",
+  "slug": "boss-li",
+  "created_at": "2026-03-30T12:58:25.444381+00:00",
+  "updated_at": "2026-03-30T13:07:48.483521+00:00",
+  "version": "v2",
+  "materials": [
+    {
+      "added_at": "2026-03-30T13:07:48.483491+00:00",
+      "kind": "notes",
+      "original_name": "boss-material.txt",
+      "stored_path": "knowledge/notes/20260330130748-boss-material.txt",
+      "size_bytes": 85
+    }
+  ]
+}

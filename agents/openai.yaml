@@ -1,0 +1,4 @@
+version: 1
+display_name: Boss Skill
+short_description: Create and evolve reusable boss simulation skills from archetypes or real-world materials.
+default_prompt: Create a boss simulation skill or update an existing boss persona using stored materials and corrections.
