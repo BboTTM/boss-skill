@@ -278,7 +278,7 @@ python3 -m unittest discover -s tests -v
 
 <div align="center">
 
-MIT License © [bobbobttm-droid](https://github.com/bobbobttm-droid)
+MIT License © [BboTTM](https://github.com/BboTTM)
 
 本 Skill 在结构设计、README 组织方式和 meta-skill 思路上参考了
 [titanwings/colleague-skill](https://github.com/titanwings/colleague-skill)。

@@ -29,13 +29,6 @@ The persona can keep evolving through:
 python3 -m unittest discover -s tests -v
 ```
 
----
-
-MIT License © [bobbobttm-droid](https://github.com/bobbobttm-droid)
-
-This skill references the meta-skill structure and README organization style from
-[titanwings/colleague-skill](https://github.com/titanwings/colleague-skill).
-
 ## Structure
 
 ```text
@@ -47,3 +40,10 @@ create-boss/
 ├── bosses/
 └── agents/openai.yaml
 ```
+
+---
+
+MIT License © [BboTTM](https://github.com/BboTTM)
+
+This skill references the meta-skill structure and README organization style from
+[titanwings/colleague-skill](https://github.com/titanwings/colleague-skill).
